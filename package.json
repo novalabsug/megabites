@@ -1,11 +1,16 @@
 {
-  "name": "mega-bites",
-  "version": "1.0.0",
-  "description": "Megabites front end",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "novalabs",
-  "license": "MIT"
+    "name": "mega-bites",
+    "version": "1.0.0",
+    "description": "Megabites front end",
+    "homepage": "https://novalabsug.github.io/megabites",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "deploy": ""
+    },
+    "author": "novalabs",
+    "license": "MIT",
+    "dependencies": {
+        "gh-pages": "^3.2.2"
+    }
 }

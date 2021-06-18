@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MegaBites</title>
-    <link rel="stylesheet" href="public/scss/main.css">
+    <link rel="stylesheet" href="/scss/main.css">
     <!-- <script src="https://kit.fontawesome.com/12c18de3e7.js" crossorigin="anonymous"></script> -->
     <link href="your-project-dir/font-css/LineIcons.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.lineicons.com/2.0/LineIcons.css">
 </head>
 
 <body>
+    <!-- <%- include('partials/header'); -%> -->
     <div class="hide-on-large">
         <!-- <%- include('partials/headerMobile'); -%> -->
         <nav class="menu-nav">
@@ -43,7 +44,7 @@
                 </li>
                 <!-- <% if(user) { %>
                     <li class="nav-item">
-                        <a href="/logout" class="nav-link btn">Log out</a>
+                        <a href="logout" class="nav-link btn">Log out</a>
                     </li>
                     <% } else { %> -->
                 <li class="nav-item">
@@ -53,13 +54,12 @@
             </ul>
         </div>
     </div>
-
-    <main id="home">
+    <main id="about">
         <div class="hide-on-large">
             <!-- <%- include('partials/headerMobile2'); -%> -->
             <div class="ext-menu">
                 <div class="menu-delivery">
-                    <img src="public/images/menus/icons/049-delivery truck.png" alt="" srcset="">
+                    <img src="/images/menus/icons/049-delivery truck.png" alt="" srcset="">
                     <div class="menu-delivery-txt">
                         <h3>For delivery</h3>
                         <h5>Call: +256 776 900 332</h5>
@@ -101,13 +101,13 @@
                 </div>
             </div>
         </div>
-        <div class="home-wrapper">
-            <div class="hide-on-small">
+        <div class="about-header">
+            <div class="about-header-wrapper hide-on-small">
                 <!-- <%- include('partials/headerNav'); -%> -->
                 <header>
                     <div class="menu-nav-contacts">
                         <div class="menu-delivery">
-                            <img src="public/images/menus/icons/049-delivery truck.png" alt="" srcset="">
+                            <img src="/images/menus/icons/049-delivery truck.png" alt="" srcset="">
                             <div class="menu-delivery-txt">
                                 <h3>For delivery</h3>
                                 <h5>Call: +256 776 900 332</h5>
@@ -133,7 +133,7 @@
                             </li>
                             <!-- <% if(user) { %>
                                 <li class="nav-items">
-                                    <a href="/logout" class="nav-link btn">Log Out</a>
+                                    <a href="logout" class="nav-link btn">Log Out</a>
                                 </li>
                                 <% } else { %> -->
                             <li class="nav-items">
@@ -192,24 +192,18 @@
                     </div>
                 </header>
             </div>
-
-            <div class="d2 hide-on-small">
-                <div class="logo hide-on-small">
-                    <img src="public/images/chef.png" alt="" class="hide-on-small">
-                    <h1 class="text-primary hide-on-small">Mega
-                        <h2 class="text-secondary hide-on-small">Bites</h2>
-                    </h1>
-                </div>
+        </div>
+        <div class="about-wrapper">
+            <div class="about-hdr">
+                <h2>About Us</h2>
             </div>
-
-            <!-- ----------------- main content --------------------------------------------------------------------------------- -->
-            <h4 class="text-primary hide-on-small">Tasty treats on the go</h4>
-            <div class="home-header">
-                <div class="header-text">
-                    <h2>Who are we ?</h2>
+            <div class="di">
+                <div class="about-history">
+                    <h2>Our little History</h2>
                     <p>Mega bites is a 5 Star bar and restaurant located in the heart of the bustling city. We offer a wide range of local and international cuisines. With ample parking space and a beautiful scenery over looking city square, we offer world
                         class service
                     </p>
+                    <p>We are dedicated to offering you the best experience of your life. With over 300 staff, we work round the clock 24 Hours a day and 7 days a week with you at every moment.</p>
                     <ul class="services">
                         <li class="service">Open 24/7</li>
                         <li class="service">Wellstorked bar</li>
@@ -217,101 +211,35 @@
                         <li class="service">Reservation</li>
                         <li class="service">24Hrs Customer service</li>
                     </ul>
-                    <a href="reservation.html" class="btn-getstarted btn">Make reservation</a>
+                    <div class="mission">
+                        <h3>Mission</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, excepturi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nobis magni nihil suscipit temporibus eius eos enim obcaecati necessitatibus.</p>
+                    </div>
+                    <div class="vision">
+                        <h3>Vision</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptate sit ratione mollitia? Nemo, laudantium. Quidem excepturi harum asperiores sapiente?</p>
+                    </div>
+                </div>
+                <div class="history-img img">
+                    <img src="/images/chef2.png" alt="" srcset="">
                 </div>
             </div>
 
-            <div class="services di">
-                <div class="services-wrapper gr gr-3">
-                    <div class="service">
-                        <div class="service-img">
-                            <img src="public/images/fast delivery service.svg" alt="" srcset="">
-                        </div>
-                        <div class="service-txt">
-                            <h3>Fast food delivery</h3>
-                            <p>We will get you your food fast, on time with no delays.</p>
-                        </div>
-                    </div>
-                    <div class="service">
-                        <div class="service-img">
-                            <img src="public/images/customerCare_1.png" alt="" srcset="">
-                        </div>
-                        <div class="service-txt">
-                            <h3>Customer TLC</h3>
-                            <p>Our customers are our major priority, thats why we have a dedicated customer care team</p>
-                        </div>
-                    </div>
-                    <div class="service">
-                        <div class="service-img">
-                            <img src="public/images/order.png" alt="" srcset="">
-                        </div>
-                        <div class="service-txt">
-                            <h3>Easy Online Order</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum.</p>
-                        </div>
-                    </div>
+        </div>
+        <div class="home-testimony">
+            <h3>What our guests say</h3>
+            <div class="testimony gr gr-3">
+                <div class="testimony-box">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus consequuntur dicta accusantium et a, libero rem</p>
+                    <h3>~ John Doe</h3>
                 </div>
-
-                <!-- ---------------------- div for ads ---------------------------------------------------------------------------- -->
-                <div class="di ad-box">
-                    <div class="order-ad" hidden>
-                        <div class="order-txt" id="modal">
-                            <!-- <img src="public/images/order_btn.png" alt="" srcset=""> -->
-                            <h3>Place your order now</h3>
-                            <a href="menu.html" class="btn">Order Now</a>
-                        </div>
-                    </div>
-                    <div class="app-ad">
-                        <div class="app-img">
-                            <div class="app">
-                                <div class="app-display">
-                                    <img src="public/images/chef.png" alt="" srcset="">
-                                    <h3>MegaBites</h3>
-                                </div>
-                                <div class="app-menu">
-                                    <i class="lni lni-line-double"></i>
-                                    <i class="lni lni-home"></i>
-                                    <i class="lni lni-chevron-right"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="app-txt">
-                            <h3>Get our app today</h3>
-                            <h4>Download from apple store and play store</h4>
-                            <div class="app-store">
-                                <div class="play-store store">
-                                    <span>
-                                        <i class="lni lni-android-original"></i>
-                                        <p>google play</p>
-                                    </span>
-                                </div>
-                                <div class="apple-store store">
-                                    <span>
-                                        <i class="lni lni-apple"></i>
-                                        <p>apple store</p>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="testimony-box">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus consequuntur dicta accusantium et a, libero rem</p>
+                    <h3>~ John Doe</h3>
                 </div>
-            </div>
-
-            <div class="home-testimony">
-                <h3>What our guests say</h3>
-                <div class="testimony">
-                    <div class="testimony-box">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus consequuntur dicta accusantium et a, libero rem</p>
-                        <h3>~ John Doe</h3>
-                    </div>
-                    <div class="testimony-box">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus consequuntur dicta accusantium et a, libero rem</p>
-                        <h3>~ John Doe</h3>
-                    </div>
-                    <div class="testimony-box">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus consequuntur dicta accusantium et a, libero rem</p>
-                        <h3>~ John Doe</h3>
-                    </div>
+                <div class="testimony-box">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus consequuntur dicta accusantium et a, libero rem</p>
+                    <h3>~ John Doe</h3>
                 </div>
             </div>
         </div>
@@ -349,11 +277,11 @@
                 </div>
                 <div class="home-navlinks">
                     <h3>Page Links</h3>
-                    <a href="index.html" class="current">Home</a>
+                    <a href="index" class="current">Home</a>
                     <a href="menu.html">Menu</a>
                     <a href="reservation.html">Reservation</a>
-                    <a href="contact.html">Contact</a>
                     <a href="about.html">About</a>
+                    <a href="contact.html">Contact Us</a>
                 </div>
                 <div class="home-comment">
                     <h3>Leave a comment</h3>
@@ -377,11 +305,9 @@
             </div>
         </footer>
     </main>
-
     <!-- <%- include('partials/footerNav'); -%> -->
-
-    <script src="public/js/main.js"></script>
-    <script src="public/js/order.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/order.js"></script>
 </body>
 
 </html>
