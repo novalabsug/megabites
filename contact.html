@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MegaBites</title>
+    <link rel="stylesheet" href="/scss/main.css">
+    <!-- <script src="https://kit.fontawesome.com/12c18de3e7.js" crossorigin="anonymous"></script> -->
+    <link href="your-project-dir/font-css/LineIcons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/2.0/LineIcons.css">
+</head>
+
+<body>
+    <!-- <%- include('partials/header'); -%> -->
+
+    <div class="hide-on-large">
+        <!-- <%- include('partials/headerMobile'); -%> -->
+        <nav class="menu-nav">
+            <div class="menu-header">
+                <h2 class="text-primary">Mega<span class="text-secondary">Bites</span></h2>
+            </div>
+            <div class="menu-btn">
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+            </div>
+        </nav>
+        <div id="mobile-menu">
+            <ul class="nav-links">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="menu.html" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="reservation.html" class="nav-link">Reservation</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <!-- <% if(user) { %>
+                    <li class="nav-item">
+                        <a href="/logout" class="nav-link btn">Log out</a>
+                    </li>
+                    <% } else { %> -->
+                <li class="nav-item">
+                    <a href="signup.html" class="nav-link btn">Sign Up</a>
+                </li>
+                <!-- <% } %> -->
+            </ul>
+        </div>
+    </div>
+
+    <main id="contact">
+        <div class="hide-on-large">
+            <!-- <%- include('partials/headerMobile2'); -%> -->
+            <div class="ext-menu">
+                <div class="menu-delivery">
+                    <img src="/images/menus/icons/049-delivery truck.png" alt="" srcset="">
+                    <div class="menu-delivery-txt">
+                        <h3>For delivery</h3>
+                        <h5>Call: +256 776 900 332</h5>
+                    </div>
+                </div>
+                <ul class="menu-icons mobile hide-on-large">
+                    <li class="profile mobile">
+                        <a class="nav-link user-profile-btn"><i class="lni lni-user"></i></a>
+                    </li>
+                    <li class="favorites">
+                        <a href="#" class="nav-link">
+                            <p class="likes-size"></p><i class="lni lni-heart"></i></a>
+                    </li>
+                    <li class="icon-cart hide-on-large">
+                        <a href="cart.html" class="nav-link hide-on-large">
+                            <p class="cart-size"></p><i class="lni lni-cart"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="user-profile mobile hide-on-large">
+                <div class="user-profile-hdr">
+                    <i class="lni lni-close" id="close-user-profile"></i>
+                </div>
+                <div class="user-profile-menu">
+                    <a id="username"></a>
+                    <div class="wr">
+                        <p class="username" hidden>
+                            <!-- <%= user.name %> -->
+                            John Doe
+                        </p>
+                        <p class="email">
+                            <!-- <%= user.email %> -->
+                            johndoe@gmail.com
+                        </p>
+                        <a href="/" class="btn">Edit Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-header">
+            <div class="contact-hdr-wrapper">
+                <div class="hide-on-small">
+                    <!-- <%- include('partials/headerNav'); -%> -->
+                    <header>
+                        <div class="menu-nav-contacts">
+                            <div class="menu-delivery">
+                                <img src="/images/menus/icons/049-delivery truck.png" alt="" srcset="">
+                                <div class="menu-delivery-txt">
+                                    <h3>For delivery</h3>
+                                    <h5>Call: +256 776 900 332</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-nav">
+                            <ul class="nav-link">
+                                <li class="nav-items current">
+                                    <a href="index.html" class="nav-link">Home</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a href="menu.html" class="nav-link">Menu</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a href="reservation.html" class="nav-link">Reservation</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a href="contact.html" class="nav-link">Contact Us</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a href="about.html" class="nav-link">About</a>
+                                </li>
+                                <!-- <% if(user) { %>
+                                    <li class="nav-items">
+                                        <a href="/logout" class="nav-link btn">Log Out</a>
+                                    </li>
+                                    <% } else { %> -->
+                                <li class="nav-items">
+                                    <a href="signup.html" class="nav-link btn">Sign Up</a>
+                                </li>
+                                <!-- <% } %> -->
+                            </ul>
+                        </div>
+                        <div class="menu-icons">
+                            <ul>
+                                <!-- <% if(user) { %> -->
+                                <li class="profile">
+                                    <a class="nav-link user-profile-btn"><i class="lni lni-user"></i></a>
+                                </li>
+                                <li class="favorites">
+                                    <a href="#" class="nav-link">
+                                        <p class="likes-size"></p><i class="lni lni-heart"></i></a>
+                                </li>
+                                <li class="icon-cart">
+                                    <a href="cart.html" class="nav-link">
+                                        <p class="cart-size"></p><i class="lni lni-cart"></i>
+                                    </a>
+                                </li>
+                                <!-- <% } else { %>
+                                        <li class="favorites">
+                                            <a href="#" class="nav-link">
+                                                <p class="likes-size"></p><i class="lni lni-heart"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-link"><i class="lni lni-cart"></i></a>
+                                        </li>
+                                        <% } %> -->
+                            </ul>
+
+                            <!-- <% if(user) {} %> -->
+                            <div class="user-profile">
+                                <div class="user-profile-hdr">
+                                    <i class="lni lni-close" id="close-user-profile"></i>
+                                </div>
+                                <div class="user-profile-menu">
+                                    <a id="username"></a>
+                                    <div class="wr">
+                                        <p class="username" hidden>
+                                            <!-- <%= user.name %> -->
+                                            John Doe
+                                        </p>
+                                        <p class="email">
+                                            <!-- <%= user.email %> -->
+                                            johndoe@gmail.com
+                                        </p>
+                                        <a href="/" class="btn">Edit Profile</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <% {} %> -->
+                        </div>
+                    </header>
+                </div>
+            </div>
+        </div>
+        <div class="contact-wrapper">
+            <div class="contact-hdr">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="di">
+                <div class="contact-details">
+                    <div class="contact-address">
+                        <h3>Find Us At</h3>
+                        <p>10th Street, Motion Avenue. Opposite Post Office</p>
+                        <h3>Open Hours</h3>
+                        <p>6 AM - 9 PM(MON - FRI)</p>
+                        <p>8 AM - 6 PM(SAT & SUN)</p>
+                    </div>
+                    <div class="contact-number">
+                        <p><i class="lni lni-phone"></i> (+033) 088 899005</p>
+                        <p><i class="lni lni-envelope"></i> info@megabites.com</p>
+                        <p><i class="lni lni-envelope"></i> reservation@megabites.com</p>
+                    </div>
+                    <div class="delivery-contact">
+                        <img src="/images/menus/icons/049-delivery truck.png" alt="" srcset="">
+                        <div class="delivery-contact-txt">
+                            <h3>For delivery</h3>
+                            <p>Call: +256 776 900 332</p>
+                        </div>
+                    </div>
+                    <div class="delivery-info">
+                        <img src="/images/menus/icons/049-delivery truck.png" alt="" srcset="">
+                        <div class="delivery-contact-txt">
+                            <h3>Delivery Hours</h3>
+                            <p>MON - FRI: 9 AM - 9 PM</p>
+                            <p>SAT & SUN: 9 AM - 6 AM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="send-message">
+                    <h4>Send us a message</h4>
+                    <form>
+                        <div class="input-group">
+                            <div class="input">
+                                <input type="text" name="contactName" id="" placeholder="Your name">
+                                <div class="name-error error"></div>
+                            </div>
+                            <div class="input">
+                                <input type="text" name="contactEmail" id="" placeholder="Your email">
+                                <div class="email-error error"></div>
+                            </div>
+                        </div>
+                        <div class="input">
+                            <input type="text" name="contactSubject" id="" placeholder="Subject">
+                            <div class="subject-error error"></div>
+                        </div>
+                        <div class="input">
+                            <textarea name="contactMsg" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+                            <div class="message-error error"></div>
+                        </div>
+                        <div class="input">
+                            <input type="submit" class="btn" value="submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4084401.6340177944!2d30.057929574687446!3d1.3726053211149571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1771a69f6499f945%3A0x874155ce43014549!2sUganda!5e0!3m2!1sen!2sug!4v1615639256390!5m2!1sen!2sug"
+                    width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <!-- <%- include('partials/footer'); -%> -->
+        <footer id="footer">
+            <div class="footer-body">
+                <div class="home-locate">
+                    <h3>Find Us At</h3>
+                    <p>10th Street, Motion Avenue. Opposite Post Office</p>
+                    <h3>Open Hours</h3>
+                    <p>6 AM - 2 AM(MON - FRI)</p>
+                    <p>7 AM - 12 AM(SAT & SUN)</p>
+                    <h3>Follow us on</h3>
+                    <div class="icons">
+                        <a href="" class="social-link">
+                            <i class="fab fa-facebook fa-2x"></i>
+                        </a>
+                        <a href="" class="social-link">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </a>
+                        <a href="" class="social-link">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                        <a href="" class="social-link">
+                            <i class="fab fa-github fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="home-contact">
+                    <h3>Contact Us</h3>
+                    <p>(+256) 786 890105</p>
+                    <p>(+033) 088 899005</p>
+                    <p>info@megabites.com</p>
+                    <p>reservation@megabites.com</p>
+                </div>
+                <div class="home-navlinks">
+                    <h3>Page Links</h3>
+                    <a href="index" class="current">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="reservation.html">Reservation</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <div class="home-comment">
+                    <h3>Leave a comment</h3>
+                    <form class="comment">
+                        <div class="input">
+                            <label for="fullname">Full name</label>
+                            <input type="text" id="fullname" name="commentName" placeholder="eg. John Doe">
+                            <div class="error name-error"></div>
+                        </div>
+                        <div class="input">
+                            <label for="comment">Your comment</label>
+                            <textarea name="comment" id="" cols="30" rows="5" placeholder="Your comment ..."></textarea>
+                            <div class="error comment-error"></div>
+                        </div>
+                        <input type="submit" value="submit" class="btn">
+                    </form>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                All Rights Reserved Copyright &copy; 2020 Designed By| <span class="text-secondary">Nova</span>
+            </div>
+        </footer>
+    </main>
+    <script>
+        const form = document.querySelector('.send-message form');
+        let emailError = document.querySelector('.email-error');
+        let nameError = document.querySelector('.name-error');
+        let subjectError = document.querySelector('.subject-error');
+        let messageError = document.querySelector('.message-error');
+
+        form.addEventListener('submit', async(e) => {
+            e.preventDefault();
+
+            let name = form.contactName.value;
+            let email = form.contactEmail.value;
+            let subject = form.contactSubject.value;
+            let message = form.contactMsg.value;
+
+            emailError.textContent = nameError.textContent = messageError.textContent = ' ';
+
+            try {
+                const res = await fetch('/contact', {
+                    method: 'POST',
+                    body: JSON.stringify({
+                        name,
+                        email,
+                        subject,
+                        message
+                    }),
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+
+                const data = await res.json();
+
+                if (data.errors) {
+                    emailError.textContent = data.errors.contactEmail;
+                    nameError.textContent = data.errors.contactName;
+                    messageError.textContent = data.errors.message;
+                }
+
+                if (data.contact) {
+                    form.contactName.value = ' ';
+                    form.contactEmail.value = ' ';
+                    form.contactSubject.value = ' ';
+                    form.contactMsg.value = ' ';
+                }
+
+            } catch (err) {
+                console.log(err);
+            }
+
+        });
+    </script>
+    <!-- <%- include('partials/footerNav'); -%> -->
+    <script src="/js/main.js"></script>
+    <script src="/js/order.js"></script>
+</body>
+
+</html>
