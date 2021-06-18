@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MegaBites</title>
+    <link rel="stylesheet" href="public/scss/main.css">
+    <!-- <script src="https://kit.fontawesome.com/12c18de3e7.js" crossorigin="anonymous"></script> -->
+    <link href="your-project-dir/font-css/LineIcons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/2.0/LineIcons.css">
+</head>
+
+<body>
+    <!-- <%- include('partials/header'); -%> -->
+
+    <div class="hide-on-large">
+        <!-- <%- include('partials/headerMobile'); -%> -->
+        <nav class="menu-nav">
+            <div class="menu-header">
+                <h2 class="text-primary">Mega<span class="text-secondary">Bites</span></h2>
+            </div>
+            <div class="menu-btn">
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+            </div>
+        </nav>
+        <div id="mobile-menu">
+            <ul class="nav-links">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="menu.html" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="reservation.html" class="nav-link">Reservation</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <!-- <% if(user) { %>
+                    <li class="nav-item">
+                        <a href="/logout" class="nav-link btn">Log out</a>
+                    </li>
+                    <% } else { %> -->
+                <li class="nav-item">
+                    <a href="signup.html" class="nav-link btn">Sign Up</a>
+                </li>
+                <!-- <% } %> -->
+            </ul>
+        </div>
+    </div>
+
+    <main id="menu">
+        <div class="hide-on-large">
+            <!-- <%- include('partials/headerMobile2'); -%> -->
+            <div class="ext-menu">
+                <div class="menu-delivery">
+                    <img src="public/images/menus/icons/049-delivery truck.png" alt="" srcset="">
+                    <div class="menu-delivery-txt">
+                        <h3>For delivery</h3>
+                        <h5>Call: +256 776 900 332</h5>
+                    </div>
+                </div>
+                <ul class="menu-icons mobile hide-on-large">
+                    <li class="profile mobile">
+                        <a class="nav-link user-profile-btn"><i class="lni lni-user"></i></a>
+                    </li>
+                    <li class="favorites">
+                        <a href="#" class="nav-link">
+                            <p class="likes-size"></p><i class="lni lni-heart"></i></a>
+                    </li>
+                    <li class="icon-cart hide-on-large">
+                        <a href="cart" class="nav-link hide-on-large">
+                            <p class="cart-size"></p><i class="lni lni-cart"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="user-profile mobile hide-on-large">
+                <div class="user-profile-hdr">
+                    <i class="lni lni-close" id="close-user-profile"></i>
+                </div>
+                <div class="user-profile-menu">
+                    <a id="username"></a>
+                    <div class="wr">
+                        <p class="username" hidden>
+                            <!-- <%= user.name %> -->
+                            John Doe
+                        </p>
+                        <p class="email">
+                            <!-- <%= user.email %> -->
+                            johndoe@gmail.com
+                        </p>
+                        <a href="/" class="btn">Edit Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-header">
+            <div class="menu-header-wrapper">
+                <div class="hide-on-small">
+                    <!-- <%- include('partials/headerNav'); -%> -->
+                    <header>
+                        <div class="menu-nav-contacts">
+                            <div class="menu-delivery">
+                                <img src="public/images/menus/icons/049-delivery truck.png" alt="" srcset="">
+                                <div class="menu-delivery-txt">
+                                    <h3>For delivery</h3>
+                                    <h5>Call: +256 776 900 332</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-nav">
+                            <ul class="nav-link">
+                                <li class="nav-items current">
+                                    <a href="index.html" class="nav-link">Home</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a href="menu.html" class="nav-link">Menu</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a href="reservation.html" class="nav-link">Reservation</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a href="contact.html" class="nav-link">Contact Us</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a href="about.html" class="nav-link">About</a>
+                                </li>
+                                <!-- <% if(user) { %>
+                                    <li class="nav-items">
+                                        <a href="/logout" class="nav-link btn">Log Out</a>
+                                    </li>
+                                    <% } else { %> -->
+                                <li class="nav-items">
+                                    <a href="/signup" class="nav-link btn">Sign Up</a>
+                                </li>
+                                <!-- <% } %> -->
+                            </ul>
+                        </div>
+                        <div class="menu-icons">
+                            <ul>
+                                <!-- <% if(user) { %> -->
+                                <li class="profile">
+                                    <a class="nav-link user-profile-btn"><i class="lni lni-user"></i></a>
+                                </li>
+                                <li class="favorites">
+                                    <a href="#" class="nav-link">
+                                        <p class="likes-size"></p><i class="lni lni-heart"></i></a>
+                                </li>
+                                <li class="icon-cart">
+                                    <a href="/cart" class="nav-link">
+                                        <p class="cart-size"></p><i class="lni lni-cart"></i>
+                                    </a>
+                                </li>
+                                <!-- <% } else { %>
+                                        <li class="favorites">
+                                            <a href="#" class="nav-link">
+                                                <p class="likes-size"></p><i class="lni lni-heart"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-link"><i class="lni lni-cart"></i></a>
+                                        </li>
+                                        <% } %> -->
+                            </ul>
+
+                            <!-- <% if(user) {} %> -->
+                            <div class="user-profile">
+                                <div class="user-profile-hdr">
+                                    <i class="lni lni-close" id="close-user-profile"></i>
+                                </div>
+                                <div class="user-profile-menu">
+                                    <a id="username"></a>
+                                    <div class="wr">
+                                        <p class="username" hidden>
+                                            <!-- <%= user.name %> -->
+                                            John Doe
+                                        </p>
+                                        <p class="email">
+                                            <!-- <%= user.email %> -->
+                                            johndoe@gmail.com
+                                        </p>
+                                        <a href="/" class="btn">Edit Profile</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <% {} %> -->
+                        </div>
+                    </header>
+                </div>
+            </div>
+        </div>
+        <div class="menu-wrapper">
+            <div id="notification">
+                <div class="notification-hdr">
+                    <i class="lni lni-alarm"></i>
+                </div>
+                <div class="notifications"></div>
+            </div>
+            <div class="menu-hdr">
+                <h2>menu</h2>
+                <div class="menu-hdr-nav">
+                    <h3 class="modern-menu active" id="menus-btn">|Modern</h3>
+                    <h3 class="classic-menu" id="menus-btn">|Classic</h3>
+                    <i class="lni lni-more-alt"></i>
+                </div>
+                <div class="menu-side-nav hide-on-small">
+                    <h3>Build your own custom order</h3>
+                    <a href="/custome_menu" class="btn">Build your order</a>
+                </div>
+            </div>
+            <div class="menu-modern" id="menu-type">
+                <div class="menu-item-btns">
+                    <ul>
+                        <li id="menu-item-btn" class="burger-item-btn">
+                            <img src="public/images/menus/icons/sandwich.png" alt="" srcset="">
+                            <a>Burgers</a>
+                        </li>
+                        <li id="menu-item-btn" class="pizza-item-btn">
+                            <img src="public/images/menus/icons/pizza.png" alt="" srcset="">
+                            <a>Pizza</a>
+                        </li>
+                        <li id="menu-item-btn" class="rolex-item-btn">
+                            <img src="public/images/menus/icons/burrito.png" alt="" srcset="">
+                            <a>Rolex</a>
+                        </li>
+                        <li id="menu-item-btn" class="pastries-item-btn">
+                            <img src="public/images/menus/icons/cupcake.png" alt="" srcset="">
+                            <a>Pastries</a>
+                        </li>
+                        <li id="menu-item-btn" class="drinks-item-btn">
+                            <img src="public/images/menus/icons/drinks.png" alt="" srcset="">
+                            <a>Drinks</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-items">
+                    <div class="burger-menu" id="menu-item">
+                        <div class="burgers-menu-wrapper" id="menu">
+                            <div class="gr gr-4">
+                                <div class="burger">
+                                    <div class="burger-img">
+                                        <img src="public/images/menus/burgers/1.jpg">
+                                    </div>
+                                    <div class="burger-txt">
+                                        <h4>Chicken burger</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At debitis sapiente beatae alias</p>
+
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a class="favorite"><i class="lni lni-heart"></i></a>
+                                        <a class="btn add-to-cart-btn" data-target="${Menus[i].menuId}"><i class="lni lni-cart"></i>add to cart</a>
+                                        <p>UGX 10000</p>
+                                    </div>
+                                </div>
+                                <div class="burger">
+                                    <div class="burger-img">
+                                        <img src="public/images/menus/burgers/4.jpg">
+                                    </div>
+                                    <div class="burger-txt">
+                                        <h4>Chicken burger</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At debitis sapiente beatae alias</p>
+
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a class="favorite"><i class="lni lni-heart"></i></a>
+                                        <a class="btn add-to-cart-btn" data-target="${Menus[i].menuId}"><i class="lni lni-cart"></i>add to cart</a>
+                                        <p>UGX 10000</p>
+                                    </div>
+                                </div>
+                                <div class="burger">
+                                    <div class="burger-img">
+                                        <img src="public/images/menus/burgers/2.jpg">
+                                    </div>
+                                    <div class="burger-txt">
+                                        <h4>Chicken burger</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At debitis sapiente beatae alias</p>
+
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a class="favorite"><i class="lni lni-heart"></i></a>
+                                        <a class="btn add-to-cart-btn" data-target="${Menus[i].menuId}"><i class="lni lni-cart"></i>add to cart</a>
+                                        <p>UGX 10000</p>
+                                    </div>
+                                </div>
+                                <div class="burger">
+                                    <div class="burger-img">
+                                        <img src="public/images/menus/burgers/4.jpg">
+                                    </div>
+                                    <div class="burger-txt">
+                                        <h4>Chicken burger</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At debitis sapiente beatae alias</p>
+
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a class="favorite"><i class="lni lni-heart"></i></a>
+                                        <a class="btn add-to-cart-btn" data-target="${Menus[i].menuId}"><i class="lni lni-cart"></i>add to cart</a>
+                                        <p>UGX 10000</p>
+                                    </div>
+                                </div>
+                                <div class="burger">
+                                    <div class="burger-img">
+                                        <img src="public/images/menus/burgers/3.jpg">
+                                    </div>
+                                    <div class="burger-txt">
+                                        <h4>Chicken burger</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At debitis sapiente beatae alias</p>
+
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a class="favorite"><i class="lni lni-heart"></i></a>
+                                        <a class="btn add-to-cart-btn" data-target="${Menus[i].menuId}"><i class="lni lni-cart"></i>add to cart</a>
+                                        <p>UGX 10000</p>
+                                    </div>
+                                </div>
+                                <div class="burger">
+                                    <div class="burger-img">
+                                        <img src="public/images/menus/burgers/4.jpg">
+                                    </div>
+                                    <div class="burger-txt">
+                                        <h4>Chicken burger</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At debitis sapiente beatae alias</p>
+
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a class="favorite"><i class="lni lni-heart"></i></a>
+                                        <a class="btn add-to-cart-btn" data-target="${Menus[i].menuId}"><i class="lni lni-cart"></i>add to cart</a>
+                                        <p>UGX 10000</p>
+                                    </div>
+                                </div>
+                                <div class="burger">
+                                    <div class="burger-img">
+                                        <img src="public/images/menus/burgers/5.jpg">
+                                    </div>
+                                    <div class="burger-txt">
+                                        <h4>Chicken burger</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At debitis sapiente beatae alias</p>
+
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a class="favorite"><i class="lni lni-heart"></i></a>
+                                        <a class="btn add-to-cart-btn" data-target="${Menus[i].menuId}"><i class="lni lni-cart"></i>add to cart</a>
+                                        <p>UGX 10000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pizza-menu" id="menu-item">
+                        <div class="pizzas-menu-wrapper" id="menu">
+                            <div class="gr gr-4">
+                                <div class="pizza">
+                                    <div class="pizza-img">
+                                        <img src="public/images/menus/pizza/1.jpg">
+                                    </div>
+                                    <div class="pizza-txt">
+                                        <h4>Chicken pizza</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At debitis sapiente beatae alias</p>
+
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a class="favorite"><i class="lni lni-heart"></i></a>
+                                        <a class="btn add-to-cart-btn" data-target="${Menus[i].menuId}"><i class="lni lni-cart"></i>add to cart</a>
+                                        <p>UGX 10000</p>
+                                    </div>
+                                </div>
+                                <div class="pizza">
+                                    <div class="pizza-img">
+                                        <img src="public/images/menus/pizza/3.jpg">
+                                    </div>
+                                    <div class="pizza-txt">
+                                        <h4>Chicken pizza</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At debitis sapiente beatae alias</p>
+
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a class="favorite"><i class="lni lni-heart"></i></a>
+                                        <a class="btn add-to-cart-btn" data-target="${Menus[i].menuId}"><i class="lni lni-cart"></i>add to cart</a>
+                                        <p>UGX 10000</p>
+                                    </div>
+                                </div>
+                                <div class="pizza">
+                                    <div class="pizza-img">
+                                        <img src="public/images/menus/pizza/2.jpg">
+                                    </div>
+                                    <div class="pizza-txt">
+                                        <h4>Chicken pizza</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At debitis sapiente beatae alias</p>
+
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a class="favorite"><i class="lni lni-heart"></i></a>
+                                        <a class="btn add-to-cart-btn" data-target="${Menus[i].menuId}"><i class="lni lni-cart"></i>add to cart</a>
+                                        <p>UGX 10000</p>
+                                    </div>
+                                </div>
+                                <div class="pizza">
+                                    <div class="pizza-img">
+                                        <img src="public/images/menus/pizza/4.jpg">
+                                    </div>
+                                    <div class="pizza-txt">
+                                        <h4>Chicken pizza</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At debitis sapiente beatae alias</p>
+
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a class="favorite"><i class="lni lni-heart"></i></a>
+                                        <a class="btn add-to-cart-btn" data-target="${Menus[i].menuId}"><i class="lni lni-cart"></i>add to cart</a>
+                                        <p>UGX 10000</p>
+                                    </div>
+                                </div>
+                                <div class="pizza">
+                                    <div class="pizza-img">
+                                        <img src="public/images/menus/pizza/3.jpg">
+                                    </div>
+                                    <div class="pizza-txt">
+                                        <h4>Chicken pizza</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At debitis sapiente beatae alias</p>
+
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a class="favorite"><i class="lni lni-heart"></i></a>
+                                        <a class="btn add-to-cart-btn" data-target="${Menus[i].menuId}"><i class="lni lni-cart"></i>add to cart</a>
+                                        <p>UGX 10000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rolex-menu" id="menu-item">
+                        <div class="rolex-menu-wrapper" id="menu">
+                            <div class="gr gr-4">
+                                <div class="rolex">
+                                    <div class="rolex-img">
+                                        <img src="public/images/menus/rolex/4.jpg">
+                                    </div>
+                                    <div class="rolex-txt">
+                                        <h4>Chicken Rolex</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At debitis sapiente beatae alias</p>
+
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a class="favorite"><i class="lni lni-heart"></i></a>
+                                        <a class="btn add-to-cart-btn" data-target="${Menus[i].menuId}"><i class="lni lni-cart"></i>add to cart</a>
+                                        <p>UGX 10000</p>
+                                    </div>
+                                </div>
+                                <div class="rolex">
+                                    <div class="rolex-img">
+                                        <img src="public/images/menus/rolex/1.jpg">
+                                    </div>
+                                    <div class="rolex-txt">
+                                        <h4>Chicken Rolex</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At debitis sapiente beatae alias</p>
+
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a class="favorite"><i class="lni lni-heart"></i></a>
+                                        <a class="btn add-to-cart-btn" data-target="${Menus[i].menuId}"><i class="lni lni-cart"></i>add to cart</a>
+                                        <p>UGX 10000</p>
+                                    </div>
+                                </div>
+                                <div class="rolex">
+                                    <div class="rolex-img">
+                                        <img src="public/images/menus/rolex/2.jpg">
+                                    </div>
+                                    <div class="rolex-txt">
+                                        <h4>Chicken Rolex</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At debitis sapiente beatae alias</p>
+
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a class="favorite"><i class="lni lni-heart"></i></a>
+                                        <a class="btn add-to-cart-btn" data-target="${Menus[i].menuId}"><i class="lni lni-cart"></i>add to cart</a>
+                                        <p>UGX 10000</p>
+                                    </div>
+                                </div>
+                                <div class="rolex">
+                                    <div class="rolex-img">
+                                        <img src="public/images/menus/rolex/2.jpg">
+                                    </div>
+                                    <div class="rolex-txt">
+                                        <h4>Chicken Rolex</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At debitis sapiente beatae alias</p>
+
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a class="favorite"><i class="lni lni-heart"></i></a>
+                                        <a class="btn add-to-cart-btn" data-target="${Menus[i].menuId}"><i class="lni lni-cart"></i>add to cart</a>
+                                        <p>UGX 10000</p>
+                                    </div>
+                                </div>
+                                <div class="rolex">
+                                    <div class="rolex-img">
+                                        <img src="public/images/menus/rolex/3.jpg">
+                                    </div>
+                                    <div class="rolex-txt">
+                                        <h4>Chicken Rolex</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At debitis sapiente beatae alias</p>
+
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a class="favorite"><i class="lni lni-heart"></i></a>
+                                        <a class="btn add-to-cart-btn" data-target="${Menus[i].menuId}"><i class="lni lni-cart"></i>add to cart</a>
+                                        <p>UGX 10000</p>
+                                    </div>
+                                </div>
+                                <div class="rolex">
+                                    <div class="rolex-img">
+                                        <img src="public/images/menus/rolex/1.jpg">
+                                    </div>
+                                    <div class="rolex-txt">
+                                        <h4>Chicken Rolex</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At debitis sapiente beatae alias</p>
+
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a class="favorite"><i class="lni lni-heart"></i></a>
+                                        <a class="btn add-to-cart-btn" data-target="${Menus[i].menuId}"><i class="lni lni-cart"></i>add to cart</a>
+                                        <p>UGX 10000</p>
+                                    </div>
+                                </div>
+                                <div class="rolex">
+                                    <div class="rolex-img">
+                                        <img src="public/images/menus/rolex/1.jpg">
+                                    </div>
+                                    <div class="rolex-txt">
+                                        <h4>Chicken Rolex</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At debitis sapiente beatae alias</p>
+
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a class="favorite"><i class="lni lni-heart"></i></a>
+                                        <a class="btn add-to-cart-btn" data-target="${Menus[i].menuId}"><i class="lni lni-cart"></i>add to cart</a>
+                                        <p>UGX 10000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pastry-menu" id="menu-item">
+                        <div class="pastry-menu-wrapper" id="menu">
+                            <div class="gr gr-4">
+                                <div class="pastry">
+                                    <div class="pastry-img">
+                                        <img src="public/images/menus/pastry/1.jpg">
+                                    </div>
+                                    <div class="pastry-txt">
+                                        <h4>Cherry Cake</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At debitis sapiente beatae alias</p>
+
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a class="favorite"><i class="lni lni-heart"></i></a>
+                                        <a class="btn add-to-cart-btn" data-target="${Menus[i].menuId}"><i class="lni lni-cart"></i>add to cart</a>
+                                        <p>UGX 10000</p>
+                                    </div>
+                                </div>
+                                <div class="pastry">
+                                    <div class="pastry-img">
+                                        <img src="public/images/menus/pastry/3.jpg">
+                                    </div>
+                                    <div class="pastry-txt">
+                                        <h4>Cherry Cake</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At debitis sapiente beatae alias</p>
+
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a class="favorite"><i class="lni lni-heart"></i></a>
+                                        <a class="btn add-to-cart-btn" data-target="${Menus[i].menuId}"><i class="lni lni-cart"></i>add to cart</a>
+                                        <p>UGX 10000</p>
+                                    </div>
+                                </div>
+                                <div class="pastry">
+                                    <div class="pastry-img">
+                                        <img src="public/images/menus/pastry/5.jpg">
+                                    </div>
+                                    <div class="pastry-txt">
+                                        <h4>Cherry Cake;</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At debitis sapiente beatae alias</p>
+
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a class="favorite"><i class="lni lni-heart"></i></a>
+                                        <a class="btn add-to-cart-btn" data-target="${Menus[i].menuId}"><i class="lni lni-cart"></i>add to cart</a>
+                                        <p>UGX 10000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="drinks-menu" id="menu-item">
+                        <h3>Drinks</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-classic" id="menu-type"></div>
+        </div>
+        <!-- <%- include('partials/footer'); -%> -->
+        <footer id="footer">
+            <div class="footer-body">
+                <div class="home-locate">
+                    <h3>Find Us At</h3>
+                    <p>10th Street, Motion Avenue. Opposite Post Office</p>
+                    <h3>Open Hours</h3>
+                    <p>6 AM - 2 AM(MON - FRI)</p>
+                    <p>7 AM - 12 AM(SAT & SUN)</p>
+                    <h3>Follow us on</h3>
+                    <div class="icons">
+                        <a href="" class="social-link">
+                            <i class="fab fa-facebook fa-2x"></i>
+                        </a>
+                        <a href="" class="social-link">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </a>
+                        <a href="" class="social-link">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                        <a href="" class="social-link">
+                            <i class="fab fa-github fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="home-contact">
+                    <h3>Contact Us</h3>
+                    <p>(+256) 786 890105</p>
+                    <p>(+033) 088 899005</p>
+                    <p>info@megabites.com</p>
+                    <p>reservation@megabites.com</p>
+                </div>
+                <div class="home-navlinks">
+                    <h3>Page Links</h3>
+                    <a href="index.html" class="current">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="reservation.html">Reservation</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="about.html">About</a>
+                </div>
+                <div class="home-comment">
+                    <h3>Leave a comment</h3>
+                    <form class="comment">
+                        <div class="input">
+                            <label for="fullname">Full name</label>
+                            <input type="text" id="fullname" name="commentName" placeholder="eg. John Doe">
+                            <div class="error name-error"></div>
+                        </div>
+                        <div class="input">
+                            <label for="comment">Your comment</label>
+                            <textarea name="comment" id="" cols="30" rows="5" placeholder="Your comment ..."></textarea>
+                            <div class="error comment-error"></div>
+                        </div>
+                        <input type="submit" value="submit" class="btn">
+                    </form>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                All Rights Reserved Copyright &copy; 2020 Designed By| <span class="text-secondary">Nova</span>
+            </div>
+        </footer>
+    </main>
+    <script src="public/js/main.js"></script>
+    <script src="public/js/menu.js"></script>
+    <script src="public/js/order.js"></script>
+</body>
+
+</html>
