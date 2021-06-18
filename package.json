@@ -2,11 +2,11 @@
     "name": "mega-bites",
     "version": "1.0.0",
     "description": "Megabites front end",
-    "homepage": "https://novalabsug.github.io/megabites",
     "main": "index.js",
+    "homepage": "https://novalabsug.github.io/megabites",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "deploy": ""
+        "deploy": "gh-pages -d dist"
     },
     "author": "novalabs",
     "license": "MIT",
