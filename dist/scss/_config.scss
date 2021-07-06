@@ -33,6 +33,10 @@ $dark-color: #211e1e;
         padding: 1rem 1.5rem;
         border-radius: 1rem;
     }
+    &.btn-large {
+        padding: 1.5rem;
+        border-radius: 1rem;
+    }
     &:hover {
         background-color: $primary-color;
         color: #000;
